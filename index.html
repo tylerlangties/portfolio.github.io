@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Tyler Langties | Full Stack Developer</title>
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="ext/css/ionicons.min.css" rel="stylesheet">
+    <link href="res/css/styles.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target="#main-nav">
+
+    <div class="loader-screen">
+        <ul class="loading-bar">
+            <li class="loading-line"></li>
+            <li class="loading-line"></li>
+            <li class="loading-line"></li>
+            <li class="loading-line"></li>
+            <li class="loading-line"></li>
+        </ul>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <header class="main-header" id="main-header">
+                <nav class="navbar">
+                    <h6><span class="sr-only">Main navigation</span></h6>
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="nav-toggle-btn collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="ion-navicon nav-open"></span>
+                                <span class="ion-android-close nav-close"></span>
+                            </button>
+                            <a class="navbar-brand nav-link logo" href="#main-header">
+                                Langties
+                            </a>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="main-nav">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#tools" class="nav-link">Tools</a></li>
+                                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                                <li><a href="#contact" class="nav-link">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="overlay"></div>
+                <div class="welcome-box">
+                    <p>Hello! I'm Tyler Langties</p>
+                    <h1>Full Stack Developer</h1>
+                </div>
+                <nav class="social-nav">
+                    <h6><span class="sr-only">Social navigation</span></h6>
+                    <ul class="nav invisible">
+                        <li><a class="social-btn social-fb" href="https://www.facebook.com/langties" target="_blank"><span class="ion-social-facebook"></span></a></li>
+                        <li><a class="social-btn social-linkedin" href="https://www.linkedin.com/in/tylerlangties" target="_blank"><span class="ion-social-linkedin"></span></a></li>
+                        <li><a class="social-btn social-github" href="https://github.com/tylerlangties" target="_blank"><span class="ion-social-github"></span></a></li>
+                        <li><a class="social-btn social-email" href="mailto:tylerlangties@gmail.com"><span class="ion-ios-email"></span></a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        
+
+        <!-- Tools -->
+        <section class="row dark-container tools-row">
+            <div class="container tools" id="tools">
+                <div class="row">
+                    <h2>Tool Roll</h2>
+                </div>
+                <div class="row">
+                    <section class="col-sm-4 skill-box">
+                        <div class="row">
+                            <h3><span class="ion-social-html5-outline icon-header"></span>HTML5</h3>
+                            <p>HTML is the foundation of a good website. I make use of HTML semantics to improve screen-reader accessibility and SEO. I always make sure my markup is W3C validated.</p>
+                        </div>
+                    </section>
+                    <section class="col-sm-4 skill-box">
+                        <div class="row">
+                            <h3><span class="ion-social-css3-outline icon-header"></span>CSS3</h3>
+                            <p>I use SASS for my CSS. I aim for well-organized non-repetitive stylesheets. I use Bootstrap, as the starting point for my designs and take it from there with custom modifications.</p>
+                        </div>
+                    </section>
+                    <section class="col-sm-4 skill-box">
+                        <div class="row">
+                            <h3><span class="ion-social-javascript-outline icon-header"></span>JavaScript</h3>
+                            <p>JS is a language of many quirks, my knowledge in lower-level languages has helped me comprehend its mechanics. I employ ReactJS and Redux, with a functional approach, to deliver demanding frontend solutions.</p>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="row">
+                    <ul class="libs-showcase clearfix">
+                        <li><img class="js-tool-logo" id="angular-logo" src="res/img/react-logo.png" alt="AngularJS logo"></li>
+                        <li><img class="js-tool-logo" id="sass-logo" src="res/img/sass-logo.png" alt="Sass logo"></li>
+                        <li><img class="js-tool-logo" id="node-logo" src="res/img/node.png" alt="Node logo"></li>
+                        <li><img class="js-tool-logo" id="bootstrap-logo" src="res/img/bootstrap.png" alt="Bootstrap logo"></li>
+                        <li><img class="js-tool-logo" id="redux-logo" src="res/img/redux.png" alt="redux logo"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <div class="portfolio-row row">
+            <section class="container portfolio" id="portfolio">
+                <div class="row">
+                    <h2>Portfolio</h2>
+                </div>
+
+                <div class="row">
+                    <div class="showcase-container clearfix" id="showcase-container">
+
+                        <section class="col-sm-6 filtr-item showcase-item" data-category="1, 2">
+                            <img class="img-responsive showcase-img" src="./res/img/recipe-app.PNG" alt="recipe app">
+                            <div class="item-desc">
+                                <h4>Recipe Finder</h4>
+                                <p>Simple Recipe finder app created using React and React router libraries. Data is grabbed from Food to fork API.</p>
+                                <a class="button github-btn" href="https://github.com/tylerlangties/recipe-app" target="_blank">GitHub</a>
+                            </div>
+                        </section>
+
+                        <section class="col-sm-6 filtr-item showcase-item" data-category="1">
+                            <img class="img-responsive showcase-img" src="./res/img/youtube-api.PNG" alt="youtube api">
+                            <div class="item-desc">
+                                <h4>No Nonsense Video</h4>
+                                <p>Barebones UI written in react that searches Youtube videos.</p>
+                                <a class="button preview-btn" href="" target="_blank">Visit</a>
+                                <a class="button github-btn" href="https://github.com/tylerlangties/youtubeAPI" target="_blank">GitHub</a>
+                            </div>
+                        </section>
+
+                        <section class="col-sm-6 filtr-item showcase-item" data-category="1">
+                            <img class="img-responsive showcase-img" src="./res/img/fitness-app.PNG" alt="alt">
+                            <div class="item-desc">
+                                <h4>Fitness app</h4>
+                                <p>Resizable to-do style fitness app created using React and Material UI.</p>
+                                <a class="button" href="https://github.com/tylerlangties/fitness-app" target="_blank">Github</a>
+                            </div>
+                        </section>
+
+                        <section class="col-sm-6 filtr-item showcase-item" data-category="1">
+                            <img class="img-responsive showcase-img" src="./res/img/smallest-weather-app.PNG" alt="alt">
+                            <div class="item-desc">
+                                <h4>A very tiny Weather App</h4>
+                                <p>Weather application written in Node.js with less than 20 lines of code.</p>
+                                <a class="button preview-btn" href="" target="_blank">Visit</a>
+                                <a class="button github-btn" href="https://github.com/tylerlangties" target="_blank">GitHub</a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+
+            </section>
+        </div>
+
+        <!-- Contact -->
+        <div class="row contact-row dark-container">
+            <section class="container contact" id="contact">
+                <div class="row">
+                    <h2><p>Need a website?</p> Lets talk.</h2>
+                </div>
+                <div class="row">
+                    <form id="contact-form" method="post" action="https://formspree.io/tylerlangties@gmail.com">
+                        <div class="row">
+                            <input name="form-name" id="form-name" type="text" placeholder="your name" required>
+                        </div>
+                        <div class="row">
+                            <input name="form-email" id="form-email" type="email" placeholder="your email" required>
+                        </div>
+                        <div class="row">
+                            <textarea name="form-msg" id="form-msg" placeholder="your message" required></textarea>
+                        </div>
+                        <div class="row">
+                            <button type="submit" class="button">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <div class="row dark-container">
+            <footer class="footer-main">
+                <p>Created by Tyler Langties. &mdash; 2018</p>
+            </footer>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.min.js"></script>
+    <script src="ext/js/jquery.filterizr.min.js"></script>
+    <script src="ext/js/particles.min.js"></script>
+    <script src="res/js/typewriter.js"></script>
+    <script src="res/js/app.js"></script>
+
+</body>
+</html>
